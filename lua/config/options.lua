@@ -17,7 +17,7 @@ vim.diagnostic.config({ virtual_text = true })
 
 -- Show all whitespaces
 vim.o.list = true
-vim.o.listchars = 'tab:»,lead:•,trail:•'
+vim.o.listchars = 'tab:» ,lead:•,trail:•'
 
 -- Highlight trailing whitespace
 vim.api.nvim_set_hl(0, 'TrailingWhitespace', { bg='LightRed' })
