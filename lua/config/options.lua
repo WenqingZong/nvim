@@ -28,3 +28,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
         syntax match TrailingWhitespace "\_s\+$"
     ]],
 })
+
+-- Set default identation to 4 spaces.
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
