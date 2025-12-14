@@ -34,14 +34,3 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
-
--- Ensure shell files use 4 spaces for indentation
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "sh",
-    callback = function()
-        vim.opt_local.tabstop = 4
-        vim.opt_local.shiftwidth = 4
-        vim.opt_local.softtabstop = 4
-        vim.opt_local.expandtab = true
-    end,
-})
